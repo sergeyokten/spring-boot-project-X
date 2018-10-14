@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <!--<p th:text="${contacts}"></p>-->
+
+
+        <ul>
+            <li th:each="contact : ${contacts}">
+                <p th:text="${contact.name}"></p>
+                <p th:text="${contact.surname}"></p>
+                <div>
+                    <a th:href="@{'contactDetail/'+${contact.id}}">
+                        <button>details</button>
+                    </a>
+                </div>
+                <div>
+                    <img th:src="@{'/ava/' + ${contact.avatar}}" alt="">
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>

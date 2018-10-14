@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h2>[[${message}]]</h2>
+
+
+        <form action="/save" method="POST" enctype="multipart/form-data">
+            <input type="" name="name" placeholder="name">
+            <input type="" name="surname" placeholder="surname">
+            <input type="" name="phone" placeholder="phone">
+            <input type="file" name="image" placeholder="image">
+            <input type="submit" name="" placeholder="">
+        </form>
+
+        <div>
+            <a href="/showAllContacts"> show All Contacts</a>
+        </div>
+    </body>
+</html>
