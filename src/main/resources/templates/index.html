@@ -6,6 +6,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
+        <hr>
+        <form th:action="@{/saveUser}" method="post">
+            <input type="" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <input type="submit" value="go!">
+        </form>
+        <hr>
+
+   
         <h2>[[${message}]]</h2>
 
 
